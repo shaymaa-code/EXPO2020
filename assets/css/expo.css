@@ -1,0 +1,493 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+img {
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.03); 
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    margin: auto;
+   background-color: #b0a771;  
+}
+nav {
+    width: 80%;
+   margin: auto;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+}
+.logo {
+    height: 50px; 
+    justify-content: space-between;
+}
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Flexbox for nav items */
+}
+
+nav ul li {
+    margin: 0 15px; /* Space between nav items */
+}
+
+nav ul li a {
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: 500; /* Medium font weight */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+nav .baricon{
+    font-size: 20px;
+    text-align: center;
+    list-style-type: none;
+    padding: 10px 20px;
+    display: none;
+}
+
+.logo img {
+    height: 50px; /* Adjust height as needed */
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 80px; /* Space between logo and navigation */
+    
+}
+
+@media (max-width: 1030px) {
+    nav .baricon{
+        display: block;
+       justify-content: end;
+    }
+
+    
+    nav .navs{
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.5s;
+        
+    }
+
+    nav .navs ul{
+        display: block;
+        text-align: center;
+
+    }
+    nav .navs ul li{
+        padding: 10px;
+        font-size: 20px;
+    }
+}
+
+
+/*=================================================================================*/ 
+#what-is-expo{
+    width: 80%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: auto;
+    align-items: center;
+}
+#what-is-expo .row{
+    
+    display: flex;
+   margin: auto;
+    justify-content: space-between;
+    background-color: rgb(232, 237, 211);
+    
+}
+#what-is-expo .row .text{
+    width: calc(100%/2);
+    padding: 20px;
+}
+
+#what-is-expo .row .expo1 img{
+    width: 100%;
+   height: 400px;
+}
+
+
+.text {
+    flex: 1; /*Allow text to grow*/
+    
+    /* padding: 80px; */
+}
+
+.text h2 {
+    margin:10px 0px 10px 40px;
+    font-size: 32px; /* Large title size */
+    color: #000000; /* Dark color for contrast */
+    
+}
+
+.text p {
+    font-size: 1.2em; /* Readable paragraph size */
+    color: #2f2f2f; /* Softer color for the paragraph */
+    line-height: 1.6; /* Increase line height for readability */
+}
+
+/*=================================================================================*/
+#pavilions{
+    width: 80%;
+    margin: auto;
+   
+}
+
+#pavilions .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+#pavilions .row .card{
+    width: calc(95%/3);
+    border: 1px solid rgb(201, 200, 200);
+    font-weight: bold;
+    background-color: rgb(231, 231, 214);
+    margin-bottom: 20px;
+}
+
+#pavilions .row .card img{
+    width: 100%;
+}
+#pavilions .row .card .discriotion{
+    padding: 20px;
+    
+}
+
+
+#pavilions .row .card .discriotion p{
+    font-size: 25px;
+    text-align: center;
+    color: rgb(79, 79, 79);
+    margin: 10px 0;
+    padding-bottom: 20px;
+    margin: auto;
+    
+}
+
+
+
+
+
+
+
+
+
+
+.slider{
+    position: relative;
+    
+    width: 100%;
+    height: 80vh;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide{
+    width: 100%;
+    
+    position: absolute;
+    transition: 1s;
+}
+
+.button{
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+     /* Position buttons at the bottom */
+    width: 100%; /* Full width for buttons */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 250px;
+    color: rgb(255, 255, 255);
+}
+
+.button button{
+    
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    cursor: pointer; /* Pointer cursor */
+    font: inherit; /* Inherit font styles */
+    color: inherit; /* Inherit text color */
+    outline: none; /* Remove outline */
+    font-size: 48px;
+   
+}
+
+
+
+
+
+
+
+
+
+#imgs{
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    
+}
+
+
+
+
+
+
+
+
+
+/*=====================================================================================*/
+#moments{
+    width: 80%;
+    margin: auto;
+    
+}
+#moments .text{
+    text-align:center;
+    
+}
+#moments .text h4,h5{
+    color: rgb(61, 63, 70);
+    font-size: 20px;
+    padding: 20px 0px;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+
+#moments .row{
+    display: flex;
+    
+    justify-content: space-between;
+    
+}
+#moments .row .card{
+    width: calc(95%/3);
+    border: 1px solid rgb(201, 200, 200);
+    font-weight: bold;
+    background-color: rgb(231, 231, 214);
+}
+
+#moments .row .card img{
+    width: 100%;
+}
+#moments .row .card .discriotion{
+    padding: 20px;
+    
+}
+
+
+#moments .row .card .discriotion p{
+    font-size: 15px;
+    text-align: center;
+    color: rgb(79, 79, 79);
+    margin: 10px 0;
+    padding-bottom: 20px;
+    
+}
+
+
+/*****************************************************************************/
+
+
+
+footer{
+    background-color: #eeeeee;
+    justify-content: center;
+    margin-top: 100px;
+    
+ }
+ footer h1{
+    
+    text-align: center;
+    padding: 80px 0px 0px 50px;
+    color: #5f6572;
+    font-size: xx-large;
+    font-weight: 800;
+    
+ }
+ footer p{
+    
+    text-align: center;
+    padding: 40px 0px 20px 50px;
+    color: #444851;
+    font-size: large;
+    font-weight: 300;
+    
+ }
+ .socialIcons{
+    
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    margin-bottom: 30px;
+ }
+ .socialIcons img{
+   width: 10%;
+    margin: auto;
+ }
+ 
+
+ hr {
+    
+    width: 80%;
+    margin: auto;
+  }
+ 
+  footer .bottom p{
+    text-align: center;
+    color: #5f6572;
+    padding: 50px;
+  }
+
+
+
+
+
+
+
+  /*//////////////////////////-------------------\\\\\\\\\\\\\\\\*/
+  @media (max-width: 1230px){
+    .button {
+        bottom: 50%;
+        }
+    .slider {
+        width: 90%; /* Increase width on smaller screens */
+    }
+
+    .button {
+        width: 90%; /* Adjust button width */
+    }
+    #what-is-expo .row{
+        flex-direction: column;
+    }
+    #what-is-expo .row .text{
+        width: 100%;
+        
+    }
+    #what-is-expo .row .expo1 img{
+        width: 100%;
+       height: 600px;
+    }
+    #pavilions .row .card{
+        width: calc(95%/2);
+        margin-bottom: 30px;
+    
+    }
+    #moments{
+       
+    }
+    #moments .row {
+        width: 60%;
+       flex-wrap: wrap;
+       margin: auto;
+      
+    }
+    #moments .row .card{
+        width: 100%;
+         margin-bottom: 20px;
+    }
+     #what-is-expo .row{
+        flex-direction: column;
+        width: 60%;
+        
+    }
+    #what-is-expo{
+        width: 100%;
+    }
+    #what-is-expo .row .expo1 img{
+        width: 100%;
+       height: 300px;
+    }
+    #pavilions .row .card .discriotion p{
+        font-size: 20px;
+    }
+    .socialIcons img{
+        width: 20%;
+         margin: auto;
+      }
+   
+  }
+  @media (max-width: 979px){
+    .button {
+        bottom: 60%;
+        }
+
+        .socialIcons img{
+            width: 30%;
+             margin: auto;
+          }
+  }
+
+  @media (max-width: 767px){
+    .button {
+        bottom: 60%;
+        }
+    #pavilions .row .card{
+        width: 70%;
+        margin: auto;
+        margin-bottom: 30px;
+        .socialIcons img{
+            width: 40%;
+             margin: auto;
+          }
+    
+    }
+     
+    footer h1,p,.socialIcons,.bottom{
+        width: 80%;
+        margin: auto;
+    }
+  }
+
+  @media (max-width: 700px){
+    #what-is-expo .row{
+        width: 90%;
+    }
+    #pavilions {
+        width: 100%;
+    }
+    #pavilions .row .card{
+        width: 90%;
+    }
+    #imgs{
+        width: 100%;
+    }
+    #moments{
+        width: 100%;
+    }
+    #moments .row {
+        width: 90%;
+    }
+    .slider {
+        width: 100%;
+    }
+    .socialIcons img{
+        width: 50%;
+         margin: auto;
+      }
+
+  }
