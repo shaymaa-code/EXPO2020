@@ -218,19 +218,22 @@ nav .baricon{
     display: flex;
     justify-content: space-between;
     margin-top: 250px;
-    color: rgb(255, 255, 255);
+    color: rgb(128, 125, 67);
+    
+    
 }
 
+.button button i{border:1px solid  #000000;}
 .button button{
     
     background: none; /* Remove background */
-    border: none; /* Remove border */
+    
     padding: 0; /* Remove padding */
     margin: 0; /* Remove margin */
     cursor: pointer; /* Pointer cursor */
     font: inherit; /* Inherit font styles */
     color: inherit; /* Inherit text color */
-    outline: none; /* Remove outline */
+    
     font-size: 48px;
    
 }
